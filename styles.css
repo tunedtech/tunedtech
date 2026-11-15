@@ -381,6 +381,24 @@ a { color: inherit; }
 .case-link:hover { color: var(--fg); border-bottom-color: var(--rule-firm); }
 .case-link svg { width: 0.75rem; height: 0.75rem; }
 
+/* One plain line under the app cards for the company's own software.
+   A real crawlable link, not another card: it has no device screenshot. */
+.work-also {
+  margin-top: var(--s-5);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--rule);
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 62ch;
+}
+.work-also a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-firm);
+  transition: border-color 0.2s var(--ease);
+}
+.work-also a:hover { border-bottom-color: var(--fg); }
+
 /* ---------- Process ---------- */
 
 .process { border-top: 1px solid var(--rule); }
